@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CarDekho</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CarDekho</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="car-listings">
+            <h2> Banner section</h2>
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/MG/Astor/10269/1686570065608/front-left-side-47.jpg?imwidth=300&impolicy=resize.jpg" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Price: 10 - 12.10 Lakh*</p>
+                <button onclick="viewDetails(1)">View Details</button>
+            </div>
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Range-Rover-Evoque/9010/1676543851808/front-left-side-47.jpg?imwidth=280&impolicy=resize.jpg" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>Price: 15 - 20.10 Lakh*</p>
+                <button onclick="viewDetails(2)">View Details</button>
+            </div>
+            <!-- More car listings go here -->
+        </section>
+
+        <section id="car-details" class="hidden">
+            <!-- Car details will be displayed here using JavaScript -->
+        </section>
+
+
+        <section class="car-listings">
+            <h4>Most-searched-cars</h4>
+            <!-- The most searched car section content goes here -->
+            <div class="car-card">
+                <img src="https://stimg2.cardekho.com/images/cms/carnewsimages/editorimages/63063702c2b4d.jpg" alt="Car 3">
+                <p>Price: 6.50 - 11.23 Lakh* </p>
+                <button onclick="viewDetails">View Details</button> 
+            </div> 
+            <div class="car-card">
+               <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg" alt="Car 4">
+            <p>Price: 11.59 - 19.69 Lakh* </p>
+            <button onclick="viewDetails">View Details</button>  
+        </div>
+        
+        </section>
+    
+        <section class="car-listings">
+            <h5>Latest-searched-Cars</h5>
+            <!-- Latest car section content goes here -->
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kushaq/9771/1691644497909/front-left-side-47.jpg" alt="Car 5">
+                <p>price: 6 - 10.10 Lakh* </p>
+                <button onclick="viewDetails">View Details</button>  
+            </div>
+            <div class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Renault/Triber/10070/1683262769249/front-left-side-47.jpg" alt="Car 6">
+                <p>price: 7.33 - 9.97 Lakh </p>
+                <button onclick="viewDetails">View Details</button>  
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CarDekho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
